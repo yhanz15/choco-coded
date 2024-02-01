@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "Choco-coded",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://github.com/yhanz15/choco-coded",
@@ -12,10 +12,10 @@
     "url": "git+https://github.com/yhanz15/choco-coded.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
+  "author": "Ian To-ong <yhanz.kd15@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/yhanz15/choco-coded/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
