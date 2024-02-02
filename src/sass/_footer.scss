@@ -5,7 +5,7 @@ footer {
 
 .footer {
   background-color: #1e1823;
-  padding: 32px 0;
+  padding: 32px 20px;
 }
 
 .container {
@@ -184,7 +184,6 @@ footer {
 
   .footer-menu {
     width: 768px;
-
   }
 
   .footer-menu::before {
@@ -209,7 +208,7 @@ footer {
   .footer-menu {
     width: 1132px;
   }
-  
+
   .footer-text {
     margin-bottom: 0;
   }
@@ -230,6 +229,6 @@ footer {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 365px;
+    width: 345px;
   }
 }

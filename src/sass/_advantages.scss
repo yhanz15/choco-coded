@@ -1,0 +1,122 @@
+.list {
+  list-style: none;
+}
+
+.advantages {
+  position: relative;
+  flex: 0 0 0%;
+  display: flex;
+  flex-direction: column;
+}
+.container-advantages {
+  display: flex;
+  // min-width: 1200px;
+  // min-height: 344px;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background: #1e1823;
+}
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: unset;
+  border: 0;
+  position: absolute;
+  clip-path: inset(100%);
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px 70px;
+  flex-flow: column;
+  flex: 1 1 0%;
+  padding: 0 20px;
+}
+
+.svg_circle {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.303px;
+  flex-shrink: 0;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* .lists-container {
+  display: flex;
+  flex-flow: column;
+  gap: 18px;
+} */
+/* .list .container::after {
+  content: "";
+  color: var(--white);
+  width: 1px;
+  height: 124px;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  gap: 18px;
+} */
+
+.section-two svg {
+  fill: currentColor;
+}
+.item-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  padding: 22px 0 18px;
+}
+.description {
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .container-advantages{
+    padding: 50px 32px;
+  }
+
+  .advantages-list {
+    justify-content: left;
+    padding: 0 50px;
+    flex-flow: row wrap;
+  }
+  .advantages {
+    flex-basis: calc((100% - 70px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    max-width: 1200px;
+  }
+  .advantages:not(:last-child)::after {
+    content: '';
+    border: 1px solid #ffffffb3;
+    height: 124px;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    border-width: 0 1px 0 0;
+    margin-top: -62px;
+  }
+  .advantages {
+    flex-basis: calc((100% - 70px * 2) / 3);
+  }
+}
