@@ -10,8 +10,6 @@
 }
 .container-advantages {
   display: flex;
-  // min-width: 1200px;
-  // min-height: 344px;
   padding: 50px 0;
   justify-content: center;
   align-items: center;
@@ -51,20 +49,6 @@
   border-radius: 365px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* .lists-container {
-  display: flex;
-  flex-flow: column;
-  gap: 18px;
-} */
-/* .list .container::after {
-  content: "";
-  color: var(--white);
-  width: 1px;
-  height: 124px;
-  background: rgba(255, 255, 255, 0.5);
-  display: inline-block;
-  gap: 18px;
-} */
 
 .section-two svg {
   fill: currentColor;
