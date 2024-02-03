@@ -1,1 +1,35 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --black: #111;
+  --grey: #1e1823;
+  --orange: #fd9222;
+  --dirty-white: #fafafa;
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: Montserrat;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  display: flex;
+  flex-flow: column;
+  gap: 72px 0;
+}
+.list {
+  list-style: none;
+}
+
