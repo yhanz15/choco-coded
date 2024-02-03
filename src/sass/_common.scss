@@ -1,7 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 :root {
-  --black: #111;
+  --black: #111; // do not use this one -instead use this --dark-grey
+  --dark-grey: #111;
   --grey: #1e1823;
   --orange: #fd9222;
   --dirty-white: #fafafa;
