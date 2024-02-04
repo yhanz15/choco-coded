@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* page colors */
+  --black: #111;
+  --grey: #1e1823;
+  --orange: #fd9222;
+  --dirty-white: #fafafa;
+  --white: #fff;
+  /* page font-style */
+  --montserrat: montserrat;
+}
+
+.subscribe-header {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  width: 378px;
+  /* justify-content: center; */
+}
+
+.subscribe-paragraph {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: -0.28px;
+  /* width: 467px; */
+}
+
+.subscribe-btn {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  padding: 14px 40px;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-section {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../images/subscribe-bg.jpg), lightgray 0px -481.157px / 100% 375.122%;
+  display: flex;
+  padding: 72px 367px 72px 366px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  text-align: center;
+  margin: 0 auto;
+  /* min-width: 1200px; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 72px auto;
+  width: 467px;
+  /* width: 1000px;
+  height: 300px; */
+}
+
+.subscribe-btn:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+/* subscribe modal */
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.subscribe-modal {
+  width: 538px;
+  height: 412px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 8%;
+  left: 35%;
+}
+
+.subscribe-modal-window {
+  width: 538px;
+  height: 192px;
+  background: url(../images/subscribe-choco.jpg),
+    lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+}
+
+.subscribe-button-close {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  float: right;
+  padding-top: 24px;
+  padding-right: 24px;
+}
+
+.subscribe-modal-header {
+  width: 298px;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.subscribe-new-chocolate {
+  color: #fd9222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.subscribe-modal-btn {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  padding: 17px 40px;
+  /* align-items: flex-start; */
+  gap: 14px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-modal-btn:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.subscribe-modal-input {
+  display: flex;
+  width: 313px;
+  height: 52px;
+  padding: 14px 24px;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.subscribe-modal-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-header-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
