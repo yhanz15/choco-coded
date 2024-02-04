@@ -1,0 +1,196 @@
+<!-- Top Sellers Section-->
+<section class="top-sellers">
+  <div class="container">
+    <div class="top-sellers-container">
+      <h2 class="top-sellers-title">
+        <span class="title-orange">TOP </span
+        ><span class="title-black">SELLERS</span>
+      </h2>
+      <ul class="top-sellers-list">
+        <li class="top-sellers-list-item">
+          <img
+            class="image1"
+            srcset="./images/image1-1x.jpg, ./images/image1-2x.jpg"
+            src="./images/image1.jpg"
+            alt="chocolate bars and cacao beans"
+            width="368"
+            height="464"
+          />
+          <p class="top-sellers-text-mobile">
+            Crazy enough chocolate originates from a <br />
+            bean just like the coffee bean called Cacao. <br />
+            Cacao has been around for thousands of <br />
+            years and was first discovered by the Native <br />
+            American tribe called the Mayans.
+          </p>
+        </li>
+        <li class="top-sellers-list-item">
+          <img
+            class="image2"
+            srcset="./images/image2-1x.jpg, ./images/image2-2x.jpg"
+            src="./images/image2.jpg"
+            alt="chocolate bars with chunks and leaf of top"
+            width="368"
+            height="464"
+          />
+        </li>
+        <li class="top-sellers-list-item hidden">
+          <img
+            class="image3"
+            srcset="./images/image3-1x.jpg, ./images/image3-2x.jpg"
+            src="./images/image3.jpg"
+            alt="assorted chocolate bars tower"
+            width="368"
+            height="464"
+          />
+        </li>
+      </ul>
+      <div class="top-sellers-text-desktop">
+        <p>
+          Crazy enough chocolate originates from a bean just like the <br />
+          coffee bean called Cacao. Cacao has been around for <br />
+          thousands of years and was first discovered by the Native <br />
+          American tribe called the Mayans.
+        </p>
+      </div>
+      <button class="buy-now-button" type="button" data-open-modal>
+        Buy now
+      </button>  
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-button" data-close-modal type="button">
+        <svg class="modal-close" width="28" height="28">
+          <use href="./images/sprite.svg#icon-close-modal24"></use>
+        </svg>
+      </button>
+      <h2>buy <span class="buynow-span">now</span></h2>
+      <div class="buynow-chocolate">
+        <ul class="choco-list">
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image" srcset="./images/chocolate1-1x.jpg, ./images/chocolate1-2x.jpg"
+              src="./images/chocolate1.jpg"
+              alt="kisspng-chocolate-bar"
+              width="120px"
+              height="107px"
+            />
+            <button class="modal-buynow-btn" type="button">100 g</button>
+          </li>
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image" srcset="./images/chocolate2-1x.jpg, ./images/chocolate2-2x.jpg"
+              src="./images/chocolate2.jpg"
+              alt="white-chocolate"
+              width="120px"
+              height="107px"
+            />
+            <button class="modal-buynow-btn" type="button">200 g</button>
+          </li>
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image" srcset="./images/chocolate3-1x.jpg, ./images/chocolate3-2x.jpg"
+              src="./images/chocolate3.jpg"
+              alt="chocolate-nuts"
+              width="120px"
+              height="107px"
+            />
+            <button class="modal-buynow-btn" type="button">300 g</button>
+          </li>
+        </ul>
+      </div>
+      <form class="modalform">
+        <div class="input-container">
+          <label class="input-label" for="personal-info"
+            >Personal information</label
+          >
+          <div class="input-area">
+            <input
+              class="input-data"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input-data"
+              type="text"
+              id="user-surname"
+              name="user-surname"
+              placeholder="Surname"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-container input-email-container">
+          <label class="input-label" for="personal-info">Email</label>
+          <div class="input-area input-email">
+            <input
+              class="input-data"
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-container input-number-container">
+          <label class="input-label" for="personal-info">Phone number</label>
+          <div class="input-area input-number-area">
+            <div class="flag-code">
+              <div class="flag">
+                <svg class="flag-icon" width="32" height="24">
+                  <use href="./images/sprite.svg#icon-ukraine-flag"></use>
+                </svg>
+              </div>
+              <div class="code-number">
+                <p>+380</p>
+              </div>
+            </div>
+            <input
+              class="tel-number"
+              type="tel"
+              id="user-number"
+              name="user-tel"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-container input-card-container">
+          <label class="input-label" for="personal-info">Card number</label>
+          <div class="input-area input-card">
+            <input
+              class="input-data"
+              type="text"
+              id="user-card"
+              name="card number"
+              placeholder="Enter card"
+              required
+            />
+            <svg class="mastercard-icon" width="30.171" height="18.408">
+              <use href="./images/sprite.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="input-container input-user-comment-container">
+          <label class="input-label" for="personal-info">Comment</label>
+          <textarea
+            id="user-comment"
+            class="user-comment"
+            placeholder="Enter text"
+            name="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="submit-btn btn" data-modal-close type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+</section>
