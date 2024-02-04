@@ -14,10 +14,19 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
+    <include src="./partials/header-hero.html"></include>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/ingredients.html"></include>
-    <include src="./partials/top-sellers.html"></include>
+    <main class="content">
+
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/ingredients.html"></include>
+      <include src="./partials/how-its-made.html"></include>
+      <include src="./partials/our-products.html"></include>
+      <include src="./partials/top-sellers.html"></include>
+      <include src="./partials/loved.html"></include>
+      <include src="./partials/subscribe.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

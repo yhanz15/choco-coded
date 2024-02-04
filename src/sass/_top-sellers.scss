@@ -2,6 +2,11 @@ ul {
   list-style: none;
 }
 
+.top-sellers {
+  display: flex;
+  justify-content: center;
+}
+
 .top-sellers-container {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--dirty-white, #fafafa);
