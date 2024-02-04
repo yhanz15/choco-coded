@@ -1,0 +1,306 @@
+<header class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <a class="logo link" href="">SIMPLY CHOCOLATE</a>
+      <svg class="logo-icon" width="24" height="24">
+        <use href="./images/header_hero.svg#icon-logo"></use>
+      </svg>
+    </div>
+    <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-item list">
+          <a class="menu-list-item-link link" href="">Home</a>
+        </li>
+        <li class="menu-list-item list">
+          <a class="menu-list-item-link link" href="">How it’s made?</a>
+        </li>
+        <li class="menu-list-item list">
+          <a class="menu-list-item-link link" href="">Our products</a>
+        </li>
+        <li class="menu-list-item list">
+          <a class="menu-list-item-link link" href="">Top sellers</a>
+        </li>
+        <li class="menu-list-item list">
+          <a class="menu-list-item-link link" href="">Chocolate is loved</a>
+        </li>
+      </ul>
+      <ul class="menu-networks-list">
+        <li class="menu-networks-list-item list">
+          <a
+            class="menu-networks-list-item-link link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="icon-instagram" width="24" height="24" stroke="#111111">
+              <use href="./images/header_hero.svg#icon-instagram-desktop"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-networks-list-item list">
+          <a
+            class="menu-networks-list-item-link link"
+            href="https://twitter.com/"
+            target="_blank"
+          >
+            <svg class="icon-twitter" width="24" height="24" stroke="#111111">
+              <use href="./images/header_hero.svg#icon-twitter-desktop"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="tablet-hamburger-icon">
+      <svg
+        class="menu-hamburger-tablet-icon menu-button js-open-menu"
+        width="32"
+        height="32"
+      >
+        <use href="./images/header_hero.svg#icon-hamburger"></use>
+      </svg>
+    </div>
+  </div>
+  <!-- mobile view header-->
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-subcontainer">
+        <button class="mobile-menu-close js-close-menu">
+          <svg
+            class="icon-close-mobile"
+            width="32"
+            height="32"
+            stroke="#ffffff"
+          >
+            <use href="./images/header_hero.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <div class="mobile-navmenu">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list-item list">
+              <a class="mobile-menu-list-item-link link" href="">Home</a>
+            </li>
+            <li class="mobile-menu-list-item list">
+              <a class="mobile-menu-list-item-link link" href=""
+                >How it’s made?</a
+              >
+            </li>
+            <li class="mobile-menu-list-item list">
+              <a class="mobile-menu-list-item-link link" href=""
+                >Our products</a
+              >
+            </li>
+            <li class="mobile-menu-list-item list">
+              <a class="mobile-menu-list-item-link link" href="">Top sellers</a>
+            </li>
+            <li class="mobile-menu-list-item list">
+              <a class="mobile-menu-list-item-link link" href=""
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu-socialmedia">
+        <ul class="mobile-menu-socialmedia-list">
+          <li class="list">
+            <a class="link" href="https://www.instagram.com/" target="_blank">
+              <svg
+                class="icon-instagrammobile"
+                width="24"
+                height="24"
+                stroke="#ffffff"
+              >
+                <use
+                  href="./images/header_hero.svg#icon-instagram-mobile"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list">
+            <a class="link" href="https://twitter.com/" target="_blank">
+              <svg
+                class="icon-twittermobile"
+                width="24"
+                height="24"
+                stroke="#ffffff"
+              >
+                <use href="./images/header_hero.svg#icon-twitter-mobile"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero-section">
+    <div class="hero-container">
+      <h3 class="hero-container-h">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h3>
+      <div class="hero-btn">
+        <div class="hero-btn1">
+          <button data-modal-open class="hero-btn-buynow btn" type="button">
+            Buy now
+          </button>
+          <button class="hero-btn-how btn" type="button">How it’s made</button>
+        </div>
+        <div class="hero-btn2">
+          <p class="hero-btn2-p">scroll down</p>
+          <button class="scroll-btn">
+            <svg class="icon-scroll" width="22" height="22" fill="#FD9222">
+              <use href="./images/header_hero.svg#icon-scroll"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- modal-window -->
+<div data-modal class="modal-window is-hidden">
+  <div class="backdrop">
+    <button class="close-button" data-modal-close type="button">
+      <svg class="modal-close" width="28" height="28" stroke="#111111">
+        <use href="./images/header_hero.svg#icon-buynow-close"></use>
+      </svg>
+    </button>
+    <h2>buy <span class="buynow-span">now</span></h2>
+    <div class="buynow-chocolate">
+      <ul class="choco-list">
+        <li class="choco-list-item list">
+          <img
+            class="buynow-chocolate-image"
+            src="./images/kissing-chocolate-bar.png"
+            srcset="
+              ./images/kissing-chocolate-bar_1x.jpg 1x,
+              ./images/kissing-chocolate-bar_2x.png 2x
+            "
+            alt="kisspng-chocolate-bar"
+            width="120"
+            height="107"
+          />
+          <button class="modal-buynow-btn" type="button">100 g</button>
+        </li>
+        <li class="choco-list-item list">
+          <img
+            class="buynow-chocolate-image"
+            src="./images/white-chocolate.png"
+            srcset="
+              ./images/white-chocolate_1x.png 1x,
+              ./images/white-chocolate_2x.png 2x
+            "
+            alt="white-chocolate"
+            width="120"
+            height="107"
+          />
+          <button class="modal-buynow-btn" type="button">200 g</button>
+        </li>
+        <li class="choco-list-item list">
+          <img
+            class="buynow-chocolate-image"
+            src="./images/chocolate-nuts.png"
+            srcset="
+              ./images/chocolate-nuts_1x.png 1x,
+              ./images/chocolate-nuts_2x.png 2x
+            "
+            alt="chocolate-nuts"
+            width="120"
+            height="107"
+          />
+          <button class="modal-buynow-btn" type="button">300 g</button>
+        </li>
+      </ul>
+    </div>
+    <form class="modalform">
+      <div class="input-container input-personalinfo-container">
+        <label class="input-label" for="user-name">Personal information</label>
+        <div class="input-area">
+          <input
+            class="input-data"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="input-data"
+            type="text"
+            id="user-surname"
+            name="user-surname"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-container input-email-container">
+        <label class="input-label" for="user-email">Email</label>
+        <div class="input-area input-email">
+          <input
+            class="input-data"
+            type="email"
+            id="user-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-container input-number-container">
+        <label class="input-label" for="user-number">Phone number</label>
+        <div class="input-area input-number-area">
+          <div class="flag-code">
+            <div class="flag">
+              <svg class="flag-icon" width="32" height="24">
+                <use href="./images/header_hero.svg#icon-flag"></use>
+              </svg>
+            </div>
+            <div class="code-number">
+              <p>+380</p>
+            </div>
+          </div>
+          <input
+            class="tel-number"
+            type="tel"
+            id="user-number"
+            name="user-tel"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+      </div>
+      <div class="input-container input-card-container">
+        <label class="input-label" for="user-card">Card number</label>
+        <div class="input-area input-card">
+          <input
+            class="input-data"
+            type="text"
+            id="user-card"
+            name="card number"
+            placeholder="Enter card"
+            required
+          />
+          <svg class="mastercard-icon" width="30.171" height="18.408">
+            <use href="./images/header_hero.svg#icon-mastercard"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="input-container input-user-comment-container">
+        <label class="input-label" for="user-comment">Comment</label>
+        <textarea
+          id="user-comment"
+          class="user-comment"
+          placeholder="Enter text"
+          name="user-comment"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <button class="submit-btn btn" data-modal-close type="submit">
+        Buy now
+      </button>
+    </form>
+  </div>
+</div>
