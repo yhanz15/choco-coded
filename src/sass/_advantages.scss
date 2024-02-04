@@ -68,5 +68,38 @@
   letter-spacing: -0.28px;
 }
 
-@import './advantages-tablet';
-@import './advantages-desktop';
+@media screen and (min-width: 768px) {
+
+  .container-advantages{
+    padding: 50px 32px;
+  }
+
+  .advantages-list {
+    justify-content: left;
+    padding: 0 50px;
+    flex-flow: row wrap;
+  }
+  .advantages {
+    flex-basis: calc((100% - 70px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    max-width: 1200px;
+  }
+  .advantages:not(:last-child)::after {
+    content: '';
+    border: 1px solid #ffffffb3;
+    height: 124px;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    border-width: 0 1px 0 0;
+    margin-top: -62px;
+  }
+  .advantages {
+    flex-basis: calc((100% - 70px * 2) / 3);
+  }
+}
