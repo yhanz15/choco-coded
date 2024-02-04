@@ -69,6 +69,7 @@
   letter-spacing: -0.28px;
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 768px) {
   .container-advantages {
     padding: 50px 32px;
@@ -103,3 +104,7 @@
     flex-basis: calc((100% - 70px * 2) / 3);
   }
 }
+=======
+@import './advantages-tablet';
+@import './advantages-desktop';
+>>>>>>> Stashed changes
