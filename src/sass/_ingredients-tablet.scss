@@ -1,24 +1,29 @@
 @media screen and (min-width: 768px) {
-}
-.section-three {
-  .title {
-    width: 411px;
-  }
-  .description {
-    width: 486px;
-  }
-  .ingredients-picture {
-    &:nth-child(1) {
-      order: 1;
+  .section-three {
+    .title {
+      width: 411px;
     }
-    &:nth-child(2) {
-      order: 3;
+
+    .description {
+      width: 486px;
     }
-    &:nth-child(3) {
-      order: 4;
-    }
-    &:nth-child(4) {
-      order: 2;
+
+    .ingredients-picture {
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 2;
+      }
     }
   }
 }
