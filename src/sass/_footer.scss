@@ -88,6 +88,10 @@
   margin-right: 0;
 }
 
+.footer-icon {
+  fill: var(--white);
+}
+
 .footer-icon-item {
   display: flex;
   width: 22px;
@@ -105,7 +109,7 @@
 }
 
 .footer-menu-anchor:hover,
-.footer-menu-anchor:hover,
+.footer-menu-anchor:focus,
 .footer-menu-anchor:active {
   color: var(--orange);
 }
