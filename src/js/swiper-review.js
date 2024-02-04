@@ -20,7 +20,7 @@ $('.slick').slick({
         slidesToShow: 1,
       },
     },
-    
+
   ],
 
 });
@@ -47,7 +47,7 @@ var scroller = $('.slick-chocolate-is-loved').slick({
         slidesToShow: 1,
       },
     },
-    
+
   ],
 
 });
