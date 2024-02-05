@@ -1,5 +1,28 @@
 @media screen and (min-width: 1200px) {
   .section-three .ingredients-lists .ingredients-picture {
     width: 270px;
+
+    img {
+      width: 206px;
+      height: 160px;
+    }
+
+    .pop-up {
+      overflow: hidden;
+      padding: 20px;
+
+      p {
+        width: 230px;
+        //height: 162px;
+        -webkit-line-clamp: 9;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        //line-height: 16px;
+      }
+    }
+    &:nth-child(4) .pop-up p {
+      //height: 140px;
+      -webkit-line-clamp: 7;
+    }
   }
 }
