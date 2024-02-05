@@ -21,8 +21,9 @@ body {
 
 /* HEADER SECTION */
 .header {
-  //   display: flex;
+  display: flex;
   margin: 0 auto;
+  height: 80px;
 }
 .header-container {
   display: flex;
@@ -32,7 +33,7 @@ body {
   padding-bottom: 32px;
   margin-inline: auto;
   width: 1136px;
-  height: 24px;
+  height: 80px;
   justify-content: space-between;
 }
 .header-logo {
@@ -521,7 +522,6 @@ body {
 
   .header-container {
     width: auto;
-    height: 32px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -603,12 +603,13 @@ body {
   .header {
     padding: 0 20px;
     min-width: 335px;
+    height: 62px;
   }
   .header-container {
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 14px;
-    height: 28px;
+    height: 62px;
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
