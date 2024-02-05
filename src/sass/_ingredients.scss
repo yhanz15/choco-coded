@@ -76,23 +76,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 36px;
-      border-radius: 15px;
-      border: 1px solid var(--orange);
-      background: var(--white);
-      padding: 28px;
-      position: relative;
+
+      //padding: 28px;
+
       width: 336px;
       height: 270px;
 
-      .poplink {
-        &:hover .pop-up,
-        &:focus .pop-up {
-          opacity: 1;
-          transform: scale(1);
-          transform-origin: center;
-        }
-      }
+
+
 
       p {
         font-size: 14px;
@@ -102,19 +93,26 @@
         color: rgba(17, 17, 17, 1);
       }
       &:nth-child(1) {
-        background: var(--orange);
+        .poplink {
+          background: var(--orange);
+        }
         p {
           color: var(--white);
         }
       }
       &:nth-child(3) {
-        background-color: rgba(30, 24, 35, 1);
+        .poplink {
+          background-color: var(--black);
+          border: 1px solid var(--black);
+        }
         p {
           color: var(--white);
         }
       }
       img {
-        margin: 0 28px;
+        width: 224px;
+        height: 171px;
+        align-self: center;
       }
 
       .pop-up {
@@ -127,6 +125,7 @@
         overflow: hidden;
         background-color: var(--white);
         border-radius: 15px;
+        border:1px solid transparent;
         padding: 28px;
         transition: all 500ms ease-out;
         transform: scale(0);
@@ -139,7 +138,7 @@
           font-weight: 600;
           letter-spacing: -0.54px;
           padding-bottom: 8px;
-          color: #111;
+          color: var(--black);
         }
         p {
           overflow: hidden;
@@ -150,7 +149,32 @@
           padding-top: 14px;
           color: #111;
           letter-spacing: -0.28px;
+
         }
+      }
+      .poplink {
+        display: flex;
+        flex-flow: column;
+        gap: 36px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid var(--orange);
+        background: var(--white);
+        padding: 28px;
+        transition: all 500ms ease-out;
+
+        &:hover, &:focus {
+          background-color: var(--white);
+          border-color: var(--orange);
+          .pop-up {
+            opacity: 1;
+            transform: scale(1);
+            transform-origin: center;
+          }
+        }
+
       }
     }
   }
