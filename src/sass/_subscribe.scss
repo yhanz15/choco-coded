@@ -49,6 +49,7 @@ img {
   line-height: 18px;
   /* 128.571% */
   letter-spacing: -0.28px;
+  width: 467px;
   /* width: 467px; */
 }
 
@@ -85,7 +86,7 @@ img {
   background-position: center, center;
   text-align: center;
   // margin: 0 auto;
-  /* min-width: 1200px; */
+  // width: 1200px;
 }
 
 .container {
@@ -112,6 +113,14 @@ img {
   pointer-events: none;
 }
 
+.main-modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  top: 0;
+}
+
 .subscribe-modal {
   width: 538px;
   height: 412px;
@@ -120,8 +129,9 @@ img {
   position: absolute;
   justify-content: center;
   align-items: center;
-  top: 8%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .subscribe-modal-window {
