@@ -1,0 +1,177 @@
+
+    <!-- Reviews Section -->
+<section id="chocolate-is-loved" class="reviews-section">
+    <div class="container slick-content">
+      <h2 class="reviews-section-tittle">
+        <span class="reviews-section-tittle-brown">Chocolate</span> is loved
+      </h2>
+  
+      <div class="slick-chocolate-is-loved">
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="
+                ./images/victoria1x.jpg 1x,
+                ./images/victoria2x.jpg 2x,
+                ./images/victoria3x.jpg 3x
+              "
+              src="./images/victoria1x.jpg"
+              alt="Victoria Dobrzhanska"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+  
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Victoria Dobrzhanska</h3>
+              <p class="reviews-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="
+                ./images/nazar1x.jpg 1x,
+                ./images/nazar2x.jpg 2x,
+                ./images/nazar3x.jpg 3x
+              "
+              src="./images/nazar1x.jpg"
+              alt="Nazar Babenko"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+  
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Nazar Babenko</h3>
+              <p class="reviews-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-item-wrapper">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="
+                ./images/olena1x.jpg 1x,
+                ./images/olena2x.jpg 2x,
+                ./images/olena3x.jpg 3x
+              "
+              src="./images/olena1x.jpg"
+              alt="Olena Kampusch"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+  
+            <div class="reviews-thumb">
+              <h3 class="reviews-name">Olena Kampusch</h3>
+              <p class="reviews-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <button type="button" class="btn btn-review" data-open-modal="1">
+        Leave a review
+      </button>
+    </div>
+    <!-- Leave Review Modal  -->
+  
+  <div class="backdrop is-hidden" data-modal="1">
+    <div class="modal-leave-review">
+      <button class="modal-leave-review-close-btn" data-close-modal>
+        <svg class="modal-leave-review-close-btn-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close-28"></use>
+        </svg>
+      </button>
+      <p class="modal-leave-review-text">
+        LEAVE A REVIEW<br />
+        ABOUT
+        <span class="modal-leave-review-text-accent">OUR CHOCOLATE</span>
+      </p>
+      <form class="modal-leave-review-form" data-form="5">
+        <label class="modal-leave-review-form-filed">
+          <input
+            class="modal-leave-review-input"
+            type="text"
+            name="user_name"
+            required
+            pattern="^[a-zA-Za-яА-Я]+"
+            minlength="2"
+            placeholder="Name"
+          />
+        </label>
+        <label class="modal-leave-review-form-filed">
+          <input
+            class="modal-leave-review-input"
+            type="email"
+            name="user_mail"
+            required
+            placeholder="Email"
+          />
+        </label>
+        <label class="modal-leave-review-form-filed">
+          <span class="modal-leave-review-input-wrapper">
+            <input
+              class="modal-leave-review-input leave-review-input-tel"
+              type="tel"
+              name="user_phone"
+              required
+              title="xx-xxx-xx-xx"
+              placeholder="Phone number"
+            />
+            <svg class="leave-review-input-tel-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-ukraine-flag"></use>
+            </svg>
+            <span class="leave-review-input-tel-text">+380</span>
+          </span>
+        </label>
+        <label class="modal-leave-review-form-filed-message">
+          <textarea
+            class="modal-leave-review-form-message"
+            name="user_message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <button class="modal-leave-review-form-sumbit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+ 
+  </section>
+  
+    <!-- Modal JS -->
+    <script src="./js/modal.js"></script>
+
+    <!-- Mobile Menu JS -->
+    <script defer src="js/mobile-menu.js"></script>
+
+        <!-- swiper-review JS -->
+         <!-- swiper-library JS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+         <!-- ==============-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="./js/swiper-review.js"></script>
+        
+        
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

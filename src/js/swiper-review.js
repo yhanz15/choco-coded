@@ -1,5 +1,5 @@
 $('.slick').slick({
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
   arrows: false,
@@ -26,7 +26,7 @@ $('.slick').slick({
 });
 
 var scroller = $('.slick-chocolate-is-loved').slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
   arrows: false,
@@ -38,7 +38,7 @@ var scroller = $('.slick-chocolate-is-loved').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       },
       },
     {
