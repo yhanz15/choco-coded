@@ -8,7 +8,11 @@ body {
 .list {
   list-style: none;
 }
+
+.btn1 {
+
 .btn {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +74,11 @@ body {
 }
 .menu-list-item-link:hover,
 .menu-list-item-link:focus {
+
+  color: #fd9222;
+
   color: var(--orange);
+
 }
 .menu-networks-list {
   display: flex;
@@ -79,11 +87,19 @@ body {
 }
 .icon-instagram:hover,
 .icon-instagram:focus {
+
+  stroke: #fd9222;
+}
+.icon-twitter:hover,
+.icon-twitter:focus {
+  stroke: #fd9222;
+
   stroke: var(--orange);
 }
 .icon-twitter:hover,
 .icon-twitter:focus {
   stroke: var(--orange);
+
 }
 .tablet-hamburger-icon {
   display: none;
@@ -123,7 +139,11 @@ body {
 }
 .mobile-menu-list-item-link:hover,
 .mobile-menu-list-item-link:focus {
+
+  color: #fd9222;
+
   color: var(--orange);
+
 }
 .mobile-menu-socialmedia-list {
   display: flex;
@@ -132,11 +152,19 @@ body {
 }
 .icon-instagrammobile:hover,
 .icon-instagrammobile:focus {
+
+  stroke: #fd9222;
+}
+.icon-twittermobile:hover,
+.icon-twittermobile:focus {
+  stroke: #fd9222;
+
   stroke: var(--orange);
 }
 .icon-twittermobile:hover,
 .icon-twittermobile:focus {
   stroke: var(--orange);
+
 }
 
 /* HERO SECTION */
@@ -188,7 +216,11 @@ body {
   height: 45px;
   color: #ffffff;
   font-size: 14px;
+
+  background: #fd9222;
+
   background: var(--orange);
+
   gap: 14px;
   border: none;
   cursor: pointer;
@@ -197,12 +229,20 @@ body {
 .hero-btn-buynow:hover,
 .hero-btn-buynow:focus {
   background: #fcf1e0;
+
+  color: #fd9222;
+
   color: var(--orange);
+
 }
 .submit-btn:hover,
 .submit-btn:focus {
   background: #fcf1e0;
+
+  color: #fd9222;
+
   color: var(--orange);
+
 }
 .hero-btn-how {
   width: 183px;
@@ -212,6 +252,18 @@ body {
   color: #ffffff;
   font-size: 14px;
   background: none;
+
+  background: #fd9222;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0btn3s ease;
+}
+.hero-btn-how:hover,
+.hero-btn-how:focus {
+  color: #fd9222;
+  background: #ffffff;
+  border: 1px solid #fd9222;
+
   border: 1px solid #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -221,6 +273,7 @@ body {
   color: var(--orange);
   background: #ffffff;
   border: 1px solid var(--orange);
+
 }
 .hero-btn2 {
   display: flex;
@@ -260,11 +313,19 @@ body {
 }
 .hero-btn2:hover .hero-btn2-p,
 .hero-btn2:focus .hero-btn2-p {
+
+  color: #fd9222;
+}
+.hero-btn2:hover .scroll-btn,
+.hero-btn2:focus .scroll-btn {
+  background-color: #fd9222;
+
   color: var(--orange);
 }
 .hero-btn2:hover .scroll-btn,
 .hero-btn2:focus .scroll-btn {
   background-color: var(--orange);
+
 }
 .hero-btn2:hover .icon-scroll,
 .hero-btn2:focus .icon-scroll {
@@ -272,7 +333,11 @@ body {
 }
 .icon-close-mobile:hover,
 .icon-close-mobile:focus {
+
+  stroke: #fd9222;
+
   stroke: var(--orange);
+
 }
 
 /* MODAL WINDOW */
@@ -320,7 +385,11 @@ body {
   visibility: hidden;
 }
 .backdrop h2 {
+
+  color: #fd9222;
+
   color: var(--orange);
+
   text-align: center;
   font-family: Montserrat;
   font-size: 24px;
@@ -501,7 +570,11 @@ body {
   height: 45px;
   color: #ffffff;
   font-size: 14px;
+
+  background: #fd9222;
+
   background: var(--orange);
+
   gap: 14px;
   border: none;
   cursor: pointer;
@@ -509,7 +582,11 @@ body {
 }
 .modal-close:hover,
 .modal-close:focus {
+
+  stroke: #fd9222;
+
   stroke: var(--orange);
+
 }
 
 /* <-------MEDIA QUERY FOR TABLET-------> */
