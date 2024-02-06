@@ -1,3 +1,109 @@
+<div class="modal-window is-hidden" data-modal="buy-now">
+  <div class="backdrop">
+    <div class="modal">
+      <button class="close-button" data-modal-close="buy-now" type="button">
+        <svg class="modal-close" width="28" height="28">
+          <use href="./images/icons.svg#icon-close-modal24"></use>
+        </svg>
+      </button>
+      <h2>buy <span class="buynow-span">now</span></h2>
+      <div class="buynow-chocolate">
+        <ul class="choco-list">
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image"
+              src="./images/kissing-chocolate-bar.png"
+              srcset="
+                ./images/kissing-chocolate-bar_1x.jpg 1x,
+                ./images/kissing-chocolate-bar_2x.png 2x
+              "
+              alt="kisspng-chocolate-bar"
+              width="120"
+              height="107"
+            />
+            <button class="modal-buynow-btn" type="button">100 g</button>
+          </li>
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image"
+              src="./images/white-chocolate.png"
+              srcset="
+                ./images/white-chocolate_1x.png 1x,
+                ./images/white-chocolate_2x.png 2x
+              "
+              alt="white-chocolate"
+              width="120"
+              height="107"
+            />
+            <button class="modal-buynow-btn" type="button">200 g</button>
+          </li>
+          <li class="choco-list-item list">
+            <img
+              class="buynow-chocolate-image"
+              src="./images/chocolate-nuts.png"
+              srcset="
+                ./images/chocolate-nuts_1x.png 1x,
+                ./images/chocolate-nuts_2x.png 2x
+              "
+              alt="chocolate-nuts"
+              width="120"
+              height="107"
+            />
+            <button class="modal-buynow-btn" type="button">300 g</button>
+          </li>
+        </ul>
+
+      </div>
+      <form class="modalform">
+        <div class="input-container">
+          <label class="input-label" for="user-name"
+            >Personal information</label
+          >
+          <div class="input-area">
+            <input
+              class="input-data"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input-data"
+              type="text"
+              id="user-surname"
+              name="user-surname"
+              placeholder="Surname"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-container input-email-container">
+          <label class="input-label" for="user-email">Email</label>
+          <div class="input-area input-email">
+            <input
+              class="input-data"
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-container input-number-container">
+          <label class="input-label" for="user-number">Phone number</label>
+          <div class="input-area input-number-area">
+            <div class="flag-code">
+              <div class="flag">
+                <svg class="flag-icon" width="32" height="24">
+                  <use href="./images/icons.svg#icon-ukraine-flag"></use>
+                </svg>
+              </div>
+              <div class="code-number">
+                <p>+380</p>
+              </div>
+
 <div class="backdrop is-hidden" data-modal="buy-now">
   <div class="modal">
     <button class="close-button" data-modal-close="buy-now" type="button">
@@ -10,31 +116,43 @@
       <ul class="choco-list">
         <li class="choco-list-item list">
           <img
-            class="buynow-chocolate-image" srcset="./images/chocolate1-1x.jpg, ./images/chocolate1-2x.jpg"
-            src="./images/chocolate1.jpg"
+            class="buynow-chocolate-image"
+            src="./images/kissing-chocolate-bar.png"
+            srcset="
+              ./images/kissing-chocolate-bar_1x.jpg 1x,
+              ./images/kissing-chocolate-bar_2x.png 2x
+            "
             alt="kisspng-chocolate-bar"
-            width="120px"
-            height="107px"
+            width="120"
+            height="107"
           />
           <button class="modal-buynow-btn" type="button">100 g</button>
         </li>
         <li class="choco-list-item list">
           <img
-            class="buynow-chocolate-image" srcset="./images/chocolate2-1x.jpg, ./images/chocolate2-2x.jpg"
-            src="./images/chocolate2.jpg"
+            class="buynow-chocolate-image"
+            src="./images/white-chocolate.png"
+            srcset="
+              ./images/white-chocolate_1x.png 1x,
+              ./images/white-chocolate_2x.png 2x
+            "
             alt="white-chocolate"
-            width="120px"
-            height="107px"
+            width="120"
+            height="107"
           />
           <button class="modal-buynow-btn" type="button">200 g</button>
         </li>
         <li class="choco-list-item list">
           <img
-            class="buynow-chocolate-image" srcset="./images/chocolate3-1x.jpg, ./images/chocolate3-2x.jpg"
-            src="./images/chocolate3.jpg"
+            class="buynow-chocolate-image"
+            src="./images/chocolate-nuts.png"
+            srcset="
+              ./images/chocolate-nuts_1x.png 1x,
+              ./images/chocolate-nuts_2x.png 2x
+            "
             alt="chocolate-nuts"
-            width="120px"
-            height="107px"
+            width="120"
+            height="107"
           />
           <button class="modal-buynow-btn" type="button">300 g</button>
         </li>
@@ -42,9 +160,7 @@
     </div>
     <form class="modalform">
       <div class="input-container">
-        <label class="input-label" for="personal-info"
-        >Personal information</label
-        >
+        <label class="input-label" for="user-name">Personal information</label>
         <div class="input-area">
           <input
             class="input-data"
@@ -63,22 +179,46 @@
             required
           />
         </div>
+
       </div>
-      <div class="input-container input-email-container">
-        <label class="input-label" for="personal-info">Email</label>
-        <div class="input-area input-email">
-          <input
-            class="input-data"
-            type="email"
-            id="user-email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
+      <form class="modalform">
+        <div class="input-container">
+          <label class="input-label" for="user-name"
+            >Personal information</label
+          >
+          <div class="input-area input-personalinfo-container">
+            <input
+              class="input-data"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input-data"
+              type="text"
+              id="user-surname"
+              name="user-surname"
+              placeholder="Surname"
+              required
+            />
+          </div>
         </div>
+
+        <div class="input-container input-email-container">
+          <label class="input-label" for="user-email">Email</label>
+          <div class="input-area input-email">
+            <input
+              class="input-data"
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter your email"
+
       </div>
       <div class="input-container input-number-container">
-        <label class="input-label" for="personal-info">Phone number</label>
+        <label class="input-label" for="user-number">Phone number</label>
         <div class="input-area input-number-area">
           <div class="flag-code">
             <div class="flag">
@@ -89,19 +229,68 @@
             <div class="code-number">
               <p>+380</p>
             </div>
+            <input
+              class="tel-number"
+              type="tel"
+              id="user-number"
+              name="user-tel"
+              placeholder="Phone number"
+
+              required
+            />
           </div>
-          <input
-            class="tel-number"
-            type="tel"
-            id="user-number"
-            name="user-tel"
-            placeholder="Phone number"
-            required
-          />
         </div>
+
+        <div class="input-container input-number-container">
+          <label class="input-label" for="user-number">Phone number</label>
+          <div class="input-area input-number-area">
+            <div class="flag-code">
+              <div class="flag">
+                <svg class="flag-icon" width="32" height="24">
+                  <use href="./images/icons.svg#icon-ukraine-flag"></use>
+                </svg>
+              </div>
+              <div class="code-number">
+                <p>+380</p>
+              </div>
+          </div>
+
+        <div class="input-container input-card-container">
+          <label class="input-label" for="user-card">Card number</label>
+          <div class="input-area input-card">
+            <input
+              class="input-data"
+              type="text"
+              id="user-card"
+              name="card number"
+              placeholder="Enter card"
+              required
+            />
+            <svg class="mastercard-icon" width="30.171" height="18.408">
+              <use href="./images/icons.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="input-container input-user-comment-container">
+          <label class="input-label" for="user-comment">Comment</label>
+          <textarea
+            id="user-comment"
+            class="user-comment"
+            placeholder="Enter text"
+            name="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="submit-btn" data-modal-close="buy-now" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
       </div>
       <div class="input-container input-card-container">
-        <label class="input-label" for="personal-info">Card number</label>
+        <label class="input-label" for="user-card">Card number</label>
         <div class="input-area input-card">
           <input
             class="input-data"
@@ -114,22 +303,39 @@
           <svg class="mastercard-icon" width="30.171" height="18.408">
             <use href="./images/icons.svg#icon-mastercard"></use>
           </svg>
+
         </div>
-      </div>
-      <div class="input-container input-user-comment-container">
-        <label class="input-label" for="personal-info">Comment</label>
-        <textarea
-          id="user-comment"
-          class="user-comment"
-          placeholder="Enter text"
-          name="user-comment"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-      <button class="submit-btn btn" data-modal-close="buy-now" type="submit">
-        Submit
-      </button>
-    </form>
+        <div class="input-container input-card-container">
+          <label class="input-label" for="user-card">Card number</label>
+          <div class="input-area input-card">
+            <input
+              class="input-data"
+              type="text"
+              id="user-card"
+              name="card number"
+              placeholder="Enter card"
+              required
+            />
+            <svg class="mastercard-icon" width="30.171" height="18.408">
+              <use href="./images/icons.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="input-container input-user-comment-container">
+          <label class="input-label" for="user-comment">Comment</label>
+          <textarea
+            id="user-comment"
+            class="user-comment"
+            placeholder="Enter text"
+            name="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="submit-btn btn" data-modal-close="buy-now" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>

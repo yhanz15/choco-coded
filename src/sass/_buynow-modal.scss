@@ -1,62 +1,50 @@
-ul {
+body {
+  font-family: 'Montserrat';
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+}
+.list {
   list-style: none;
 }
 
-.top-sellers {
+.btn1 {
   display: flex;
+  align-items: center;
   justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
 }
-
-.top-sellers-container {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--dirty-white, #fafafa);
-}
-
-.title-orange {
-  color: var(--orange, #fd9222);
-}
-
-.title-black {
-  color: var(--black, #111);
-}
-
-.top-sellers-title {
-  text-align: center;
-}
-
-.buy-now-button {
-  color: var(--white, #fff);
-  background-color: var(--orange, #fd9222);
-  border-radius: 100;
-  padding: 14px 40px;
-}
+/* MODAL WINDOW */
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 1058px;
+  height: 100%;
+  z-index: 3;
+  background: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-color: rgba(46, 47, 66, 0.4);
-
-
 }
 .backdrop {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 609px;
-  height: 1058px;
+  height: 100%;
   background: #fafafa;
   border-radius: 15px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 48px 48.5px;
-  gap: 32px;
+  overflow-y: scroll;
 }
 .close-button {
   position: absolute;
@@ -72,6 +60,11 @@ ul {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: none;
 }
+.is-hidden {
+  // opacity: 0;
+  // pointer-events: none;
+  // visibility: hidden;
+}
 .backdrop h2 {
   color: #fd9222;
   text-align: center;
@@ -82,7 +75,7 @@ ul {
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 .buynow-span {
   color: #111;
@@ -121,14 +114,13 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 8px;
   gap: 18px;
 }
 .input-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 513px;
 }
 .input-label {
   color: #000;
@@ -143,6 +135,10 @@ ul {
   display: flex;
   gap: 21px;
 }
+
+.input-personalinfo-container .input-data {
+  width: 246px;
+}
 .input-data {
   height: 66px;
   display: flex;
@@ -153,9 +149,7 @@ ul {
   padding: 22px 24px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-}
-.input-personalinfo-container .input-data {
-  width: 245px;
+  /* box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03); */
 }
 .input-data::placeholder,
 .tel-number::placeholder,
@@ -249,7 +243,6 @@ ul {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   resize: none;
 }
-
 .submit-btn {
   width: 133px;
   height: 45px;
@@ -257,101 +250,28 @@ ul {
   font-size: 14px;
   background: #fd9222;
   gap: 14px;
-  border-radius: 100;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+}
+.modal-close:hover,
+.modal-close:focus {
+  stroke: #fd9222;
 }
 
-.buy-now-button {
-  width: 144px;
-  height: 45px;
-  color: #ffffff;
-  font-size: 14px;
-  background: #fd9222;
-  gap: 14px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.buy-now-button:hover,
-.buy-now-button:focus {
-  background: #fcf1e0;
-  color: #fd9222;
-}
-
-.hero-btn2 {
-  display: flex;
-  gap: 14px;
-  width: 130px;
-  height: 38px;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.hero-btn2-p {
-  display: flex;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.42px;
-}
-
-/* Media Query */
-
-/* Mobile View */
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .container {
-    width: 375px;
+/* <-------MEDIA QUERY FOR MOBILE-------> */
+@media (max-width: 767px) {
+  /* MODAL WINDOW */
+  .icon-scroll {
+    width: 16px;
+    height: 16px;
   }
-
-  .top-sellers-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.03em;
-    margin-bottom: 32px;
+  .modal-window {
+    height: 100%;
   }
-
-  .top-sellers-list {
-    display: block;
-    justify-content: center;
-  }
-
-  .top-sellers-text-desktop {
-    display: none;
-  }
-
-  .image3 {
-    display: none;
-  }
-
-  .top-sellers-text-mobile {
-    margin-top: 20px;
-    margin-bottom: 32px;
-  }
-
-  .buy-now-button {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   .backdrop {
     width: 311px;
-    height: 994px;
+    height: 100%;
     gap: 32px;
     padding: 32px 24px;
   }
@@ -360,6 +280,7 @@ ul {
     line-height: 24px;
     letter-spacing: -0.6px;
   }
+
   .choco-list {
     flex-direction: column;
   }
@@ -465,54 +386,5 @@ ul {
   .submit-btn {
     width: 109px;
     height: 41px;
-  }
-}
-
-/* Tablet View */
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 768px;
-  }
-
-  .top-sellers-list {
-    display: flex;
-    justify-content: center;
-    gap: 16;
-  }
-
-  .top-sellers-text-desktop {
-    display: none;
-  }
-
-  .image3 {
-    display: none;
-  }
-
-  .top-sellers-text-mobile {
-    margin-top: 20px;
-    margin-bottom: 32px;
-  }
-}
-
-/* Desktop View */
-
-@media screen and (min-width: 1200px) {
-  .container {
-    min-width: 1200px;
-  }
-
-  .top-sellers-list {
-    display: flex;
-    justify-content: center;
-    gap: 16;
-  }
-
-  .top-sellers-text-mobile {
-    display: none;
-  }
-
-  .top-sellers-text-desktop {
-    font-family: 'Montserrat', sans-serif;
   }
 }

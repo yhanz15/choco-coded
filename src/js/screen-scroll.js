@@ -19,14 +19,12 @@ function scrollToSmoothly(pos, time) {
   });
 }
 
-
-document.querySelector('.scroll-btn').addEventListener('click', function (e) {
-  scrollToSmoothly(document.scrollingElement.scrollHeight, 3000);
-});
+// document.querySelector('.scroll-btn').addEventListener('click', function (e) {
+//   scrollToSmoothly(document.scrollingElement.scrollHeight, 3000);
+// });
 
 document
   .querySelector('.scrolldown-btn')
   .addEventListener('click', function (e) {
-    scrollToSmoothly(document.scrollingElement.scrollHeight, 1000);
+    scrollToSmoothly(document.scrollingElement.scrollHeight, 10000);
   });
-
