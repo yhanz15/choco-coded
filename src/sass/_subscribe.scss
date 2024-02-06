@@ -112,6 +112,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
 }
 
 .main-modal {
@@ -259,6 +260,52 @@ img {
     background-position: center;
     background-size: cover;
     min-width: 375px;
+  }
+
+  .subscribe-modal {
+    width: 311px;
+    height: 350px;
+  }
+
+  .subscribe-modal-window {
+    width: 311px;
+    height: 169px;
+  }
+
+  .subscribe-modal-header,
+  .subscribe-new-chocolate {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    width: 263px;
+  }
+
+  .subscribe-modal-input {
+    width: 263px;
+    padding: 14px 18px;
+    font-size: 14px;
+    display: inline-flex;
+  }
+
+  .subscribe-modal-btn {
+    position: absolute;
+    width: 100px;
+    padding: 14px 28px;
+    font-size: 14px;
+    justify-content: center;
+    right: 0;
+  }
+
+  .subscribe-modal-input-container {
+    position: relative;
+    width: 263px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe-header-form-container {
+    margin: 32px 24px;
   }
 }
 
