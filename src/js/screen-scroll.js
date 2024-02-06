@@ -19,8 +19,6 @@ function scrollToSmoothly(pos, time) {
   });
 }
 
-document
-  .querySelector('.scrolldown-btn')
-  .addEventListener('click', function (e) {
-    scrollToSmoothly(document.scrollingElement.scrollHeight, 1000);
-  });
+document.querySelector('.scroll-btn').addEventListener('click', function (e) {
+  scrollToSmoothly(document.scrollingElement.scrollHeight, 1000);
+});
