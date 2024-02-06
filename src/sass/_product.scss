@@ -1,0 +1,230 @@
+:root {
+    /* page colors */
+    --black: #111;
+    --grey: #1E1823;
+    --orange: #FD9222;
+    --dirty-white: #FAFAFA;
+    --white: #fff;
+    /* page font-style */
+    --montserrat: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dirty-white);
+    font-family: var(--montserrat);
+}
+
+.container {
+    width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+/* section our product */
+.slider-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-header {
+    font-family: var(--montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.72px;
+}
+
+.product-header-span {
+    color: var(--orange);
+}
+
+/* product card */
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.product-item {
+    /* width: 100%;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 15px;
+    background-color: var(--white); */
+    display: flex;
+}
+
+.product-image-container {
+    padding: 32px 20px 0 20px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+/* product content */
+.product-content-header {
+    text-align: center;
+    font-family: var(--montserrat);
+}
+
+.product-content-paragraph {
+    text-align: center;
+    color: rgba(17, 17, 17, 0.70);
+    margin-bottom: 18px;
+}
+
+/* product button */
+.product-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.product-content-button {
+    background: var(--dirty-white);
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 8px 20px;
+
+}
+
+/* slider */
+.swiper-container {
+    width: 1136px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 60px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    width: 270px !important;
+    height: 364px;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+}
+
+.product-content-button:hover {
+    background-color: var(--orange);
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--orange);
+    width: 13px;
+    height: 13px;
+    transition: all 0.5s ease;
+}
+
+.swiper-pagination-bullet-active {
+    /* transform: scale(1.5); */
+    width: 28px;
+    height: 13px;
+    border-radius: 30px;
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    transition: all 0.5s ease;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+
+/* responsive */
+
+@media (min-width: 428px) {
+    .made-description {
+        max-width: 335px;
+    }
+
+    .made-video {
+        width: 100%;
+        max-width: 335px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 427px) {
+    .made-description {
+        max-width: 335px;
+    }
+
+    .made-video {
+        width: 100%;
+        max-width: 335px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .made-description {
+        max-width: 614px;
+    }
+
+    .made-video {
+        width: 100%;
+        max-width: 614px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    /* .made-video{
+        padding-top: 75%;
+    } */
+
+}
+
+@media (min-width: 1158px) {
+    .made-description {
+        max-width: 516px;
+        height: 400px;
+    }
+
+    .made-video {
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1157px) {
+    .swiper {
+        width: 100%;
+    }
+
+    .made-content {
+        width: 100%;
+        flex-direction: column;
+    }
+}
