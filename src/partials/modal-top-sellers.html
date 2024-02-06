@@ -52,6 +52,7 @@
             <button class="modal-buynow-btn" type="button">300 g</button>
           </li>
         </ul>
+
       </div>
       <form class="modalform">
         <div class="input-container">
@@ -178,19 +179,43 @@
             required
           />
         </div>
+
       </div>
-      <div class="input-container input-email-container">
-        <label class="input-label" for="user-email">Email</label>
-        <div class="input-area input-email">
-          <input
-            class="input-data"
-            type="email"
-            id="user-email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
+      <form class="modalform">
+        <div class="input-container">
+          <label class="input-label" for="user-name"
+            >Personal information</label
+          >
+          <div class="input-area input-personalinfo-container">
+            <input
+              class="input-data"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input-data"
+              type="text"
+              id="user-surname"
+              name="user-surname"
+              placeholder="Surname"
+              required
+            />
+          </div>
         </div>
+
+        <div class="input-container input-email-container">
+          <label class="input-label" for="user-email">Email</label>
+          <div class="input-area input-email">
+            <input
+              class="input-data"
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter your email"
+
       </div>
       <div class="input-container input-number-container">
         <label class="input-label" for="user-number">Phone number</label>
@@ -210,10 +235,26 @@
               id="user-number"
               name="user-tel"
               placeholder="Phone number"
+
               required
             />
           </div>
         </div>
+
+        <div class="input-container input-number-container">
+          <label class="input-label" for="user-number">Phone number</label>
+          <div class="input-area input-number-area">
+            <div class="flag-code">
+              <div class="flag">
+                <svg class="flag-icon" width="32" height="24">
+                  <use href="./images/icons.svg#icon-ukraine-flag"></use>
+                </svg>
+              </div>
+              <div class="code-number">
+                <p>+380</p>
+              </div>
+          </div>
+
         <div class="input-container input-card-container">
           <label class="input-label" for="user-card">Card number</label>
           <div class="input-area input-card">
@@ -262,22 +303,39 @@
           <svg class="mastercard-icon" width="30.171" height="18.408">
             <use href="./images/icons.svg#icon-mastercard"></use>
           </svg>
+
         </div>
-      </div>
-      <div class="input-container input-user-comment-container">
-        <label class="input-label" for="user-comment">Comment</label>
-        <textarea
-          id="user-comment"
-          class="user-comment"
-          placeholder="Enter text"
-          name="user-comment"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-      <button class="submit-btn btn" data-modal-close="buy-now" type="submit">
-        Submit
-      </button>
-    </form>
+        <div class="input-container input-card-container">
+          <label class="input-label" for="user-card">Card number</label>
+          <div class="input-area input-card">
+            <input
+              class="input-data"
+              type="text"
+              id="user-card"
+              name="card number"
+              placeholder="Enter card"
+              required
+            />
+            <svg class="mastercard-icon" width="30.171" height="18.408">
+              <use href="./images/icons.svg#icon-mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="input-container input-user-comment-container">
+          <label class="input-label" for="user-comment">Comment</label>
+          <textarea
+            id="user-comment"
+            class="user-comment"
+            placeholder="Enter text"
+            name="user-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="submit-btn btn" data-modal-close="buy-now" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>

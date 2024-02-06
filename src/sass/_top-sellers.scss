@@ -38,6 +38,10 @@ ul {
   height: 1058px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+
 }
 .backdrop {
   position: absolute;
@@ -83,6 +87,7 @@ ul {
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 .buynow-span {
   color: #111;
@@ -121,13 +126,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 8px;
+  margin-top: 40px;
   gap: 18px;
 }
 .input-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 513px;
 }
 .input-label {
   color: #000;
@@ -152,7 +158,9 @@ ul {
   padding: 22px 24px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  /* box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03); */
+}
+.input-personalinfo-container .input-data {
+  width: 245px;
 }
 .input-data::placeholder,
 .tel-number::placeholder,
@@ -166,7 +174,8 @@ ul {
   letter-spacing: -0.36px;
 }
 .input-email-container,
-.input-card-container {
+.input-card-container,
+.input-personalinfo-container {
   width: 509px;
 }
 .flag-code {
