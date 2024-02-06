@@ -7,9 +7,6 @@
   justify-content: center;
 }
 
-.footer-menu {
-  margin-left: 20px;
-}
 .footer-container {
   max-width: 375px;
   padding: 30px 20px;
@@ -19,12 +16,17 @@
 }
 
 .footer-contacts-container {
-  width: 388px;
+  display: flex;
+  flex-direction: column;
+  width: 335px;
   margin: 0;
+  align-items: flex-start;
 }
 // FOOTER LOGO
 
 .footer-text {
+  display: inline-block;
+  width: 300px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
