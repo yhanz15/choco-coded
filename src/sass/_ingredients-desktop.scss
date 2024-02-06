@@ -2,26 +2,28 @@
   .section-three {
     padding-top: 128px;
 
-    .ingredients-picture {
-      width: 270px;
+    .ingredients-lists {
+      .ingredients-picture {
+        width: 270px;
 
-      img {
-        width: 206px;
-        height: 160px;
-      }
-      .pop-up {
-        overflow: hidden;
-        padding: 20px;
-
-        p {
-          width: 230px;
-          -webkit-line-clamp: 9;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
+        img {
+          width: 206px;
+          height: 160px;
         }
+        .pop-up {
+          overflow: hidden;
+          padding: 20px;
 
-        &:nth-child(4) .pop-up p {
-          -webkit-line-clamp: 7;
+          p {
+            width: 230px;
+            -webkit-line-clamp: 9;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+          }
+
+          &:nth-child(4) .pop-up p {
+            -webkit-line-clamp: 7;
+          }
         }
       }
     }
