@@ -1,2 +1,0 @@
-$(".slick").slick({slidesToShow:1,slidesToScroll:1,dots:!0,arrows:!1,infinite:!0,autoplay:!0,autoplaySpeed:3e3,responsive:[{breakpoint:1200,settings:{slidesToShow:2.5}},{breakpoint:768,settings:{slidesToShow:1}}]});var scroller=$(".slick-chocolate-is-loved").slick({slidesToShow:1,slidesToScroll:1,dots:!0,arrows:!1,infinite:!0,autoplay:!0,autoplaySpeed:3e3,responsive:[{breakpoint:1200,settings:{slidesToShow:1}},{breakpoint:768,settings:{slidesToShow:1}}]});
-//# sourceMappingURL=index.0c9b29ab.js.map
