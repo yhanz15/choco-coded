@@ -108,18 +108,13 @@ img {
 
 /* subscribe modal */
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .main-modal {
   position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
-  top: 0;
+  background: rgba(46, 47, 66, 0.4);
+  z-index: 2;
 }
 
 .subscribe-modal {
