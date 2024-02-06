@@ -1,0 +1,274 @@
+body {
+  font-family: 'Montserrat';
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+}
+
+/* HEADER SECTION */
+.header {
+  display: flex;
+  margin: 0 auto;
+  height: 80px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-inline: auto;
+  width: 1136px;
+  height: 80px;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.header-logo .logo {
+  color: #111111;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+}
+.menu {
+  display: flex;
+  gap: 137px;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  gap: 24px;
+}
+.menu-list-item-link {
+  color: #111111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+.menu-list-item-link:hover,
+.menu-list-item-link:focus {
+  color: #fd9222;
+
+  color: var(--orange);
+}
+.menu-networks-list {
+  display: flex;
+  gap: 18px;
+  height: 24px;
+}
+.icon-instagram:hover,
+.icon-instagram:focus {
+  stroke: #fd9222;
+}
+.icon-twitter:hover,
+.icon-twitter:focus {
+  stroke: #fd9222;
+
+  stroke: var(--orange);
+}
+.icon-twitter:hover,
+.icon-twitter:focus {
+  stroke: var(--orange);
+}
+.tablet-hamburger-icon {
+  display: none;
+}
+.mobile-menu-list-item-link {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu-subcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.mobile-menu-close {
+  display: flex;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+}
+.mobile-navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-menu-list-item-link:hover,
+.mobile-menu-list-item-link:focus {
+  color: #fd9222;
+}
+.mobile-menu-socialmedia-list {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.icon-instagrammobile:hover,
+.icon-instagrammobile:focus {
+  stroke: #fd9222;
+}
+.icon-twittermobile:hover,
+.icon-twittermobile:focus {
+  stroke: #fd9222;
+}
+.icon-twittermobile:hover,
+.icon-twittermobile:focus {
+  stroke: #fd9222;
+}
+
+/* <-------MEDIA QUERY FOR TABLET-------> */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+  .header-logo .logo {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.42px;
+  }
+  .logo-icon {
+    height: 21px;
+    width: 21px;
+  }
+  .tablet-hamburger-icon {
+    display: flex;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    width: 298px;
+    height: 100vh;
+    background: #1e1823;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 32px;
+  }
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .mobile-menu.is-open {
+    transform: translateX(0%);
+  }
+  .menu {
+    display: none;
+  }
+}
+/* <-------MEDIA QUERY FOR MOBILE-------> */
+@media (max-width: 767px) {
+  .header {
+    padding: 0 20px;
+    min-width: 335px;
+    height: 62px;
+  }
+  .header-container {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    height: 62px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo .logo {
+    min-width: 144px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.42px;
+  }
+  .logo-icon {
+    height: 21px;
+    width: 21px;
+  }
+  .tablet-hamburger-icon {
+    display: flex;
+  }
+  .menu-hamburger-tablet-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    width: 220px;
+    height: 100vh;
+    background: #1e1823;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 32px;
+  }
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .mobile-menu-subcontainer {
+    gap: 88px;
+  }
+  .mobile-menu.is-open {
+    transform: translateX(0%);
+  }
+  .menu {
+    display: none;
+  }
+}
