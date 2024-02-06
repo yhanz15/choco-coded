@@ -155,6 +155,9 @@ ul {
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 }
+.input-personalinfo-container .input-data {
+  width: 245px;
+}
 .input-data::placeholder,
 .tel-number::placeholder,
 .user-comment::placeholder {
