@@ -20,5 +20,5 @@ function scrollToSmoothly(pos, time) {
 }
 
 document.querySelector('.scroll-btn').addEventListener('click', function (e) {
-  scrollToSmoothly(document.scrollingElement.scrollHeight, 3000);
+  scrollToSmoothly(document.scrollingElement.scrollHeight, 4000);
 });
