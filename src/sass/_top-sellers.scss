@@ -1,10 +1,11 @@
-ul {
-  list-style: none;
-}
-
 .top-sellers {
   display: flex;
   justify-content: center;
+
+  img {
+    width: 335px;
+    height: 464px;
+  }
 }
 
 .top-sellers-container {
@@ -53,53 +54,47 @@ ul {
 
 /* Mobile View */
 
-@media screen and (min-width: 375px) {
-  .ts-container {
-    width: 375px;
-    display: flex;
-    justify-content: center;
-    // padding-top: 72px;
-  }
+.ts-container {
+  min-width: 375px;
+  display: flex;
+  justify-content: center;
+  // padding-top: 72px;
+}
 
-  .top-sellers-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.03em;
-    margin-bottom: 32px;
-  }
+.top-sellers-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
 
-  .top-sellers-list {
-    display: block;
-    justify-content: center;
-  }
-  .top-sellers-list-item:nth-child(3) {
-    display: none;
-  }
-  .top-sellers-text-desktop p {
-    display: none;
-  }
+.top-sellers-list {
+  display: block;
+  justify-content: center;
+}
+.top-sellers-list-item:nth-child(3) {
+  display: none;
+}
+.top-sellers-text-desktop p {
+  display: none;
+}
 
-  img {
-    width: 335px;
-    height: 464px;
-  }
-  // .image3 {
-  //   display: none;
-  // }
+// .image3 {
+//   display: none;
+// }
 
-  .top-sellers-text-mobile {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 32px;
-    width: 306px;
-  }
+.top-sellers-text-mobile {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  width: 306px;
+}
 
-  .buy-now-button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20;
-  }
+.buy-now-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /* Tablet View */
@@ -107,6 +102,11 @@ ul {
 @media screen and (min-width: 768px) {
   .ts-container {
     width: 768px;
+
+    img {
+      width: 344px;
+      height: 464px;
+    }
   }
   .top-sellers-container {
     width: 704px;
@@ -134,10 +134,6 @@ ul {
       width: 306px;
       display: block;
     }
-  }
-  img {
-    width: 344px;
-    height: 464px;
   }
 
   .top-sellers-text-mobile-container {
