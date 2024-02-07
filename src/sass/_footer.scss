@@ -162,8 +162,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  .footer-container {
+    max-width: 768px;
   }
 
   .footer {
@@ -177,7 +177,8 @@
     justify-content: space-between;
   }
   .footer-contacts {
-    margin-top: 5px;
+    position: absolute;
+    padding-left: 424px; 
     margin-bottom: 50px;
   }
 
@@ -211,9 +212,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .footer-container {
     width: 1200px;
     padding: 50px 32px;
+     margin-left: -424px;
   }
 
   .footer-contacts-container {
@@ -239,12 +241,20 @@
   }
 
   .footer-contacts {
+    position: absolute;
+    padding-left: 870px; 
     margin-bottom: 0;
   }
 
   .footer-contacts-container {
     width: 1132px;
     margin-bottom: 62px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
   }
 }
 
