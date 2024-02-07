@@ -28,8 +28,9 @@ var scroller = $('.slick-chocolate-is-loved').slick({
   dots: true,
   arrows: false,
   infinite: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  // autoplay: true,
+  // autoplaySpeed: 3000,
+  loop: true,
   responsive: [
     {
       breakpoint: 1200,
