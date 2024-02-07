@@ -1,0 +1,122 @@
+.choco-isloved-section {
+  margin: 0 auto;
+
+  .choco-container {
+    text-align: center;
+    width: 375px;
+    padding: 72px 20px;
+  }
+
+  .swiper-wrapper {
+    width: calc(100% - 40px);
+  }
+
+  .reviews-section-title {
+    color: var(--black);
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    span {
+      color: var(--orange);
+    }
+  }
+
+  .reviews-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+  }
+  .reviewer-card {
+    // display: flex;
+    // justify-content: center;
+    // flex-flow: column;
+  }
+  .reviewer-content-container {
+    text-align: center;
+    background-color: var(--white);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    padding: 104px 16px 0;
+    margin-top: -80px;
+    height: 200px;
+
+    p {
+      color: rgba(17, 17, 17, 0.7);
+      font-size: 14px;
+      line-height: 1.28571;
+    }
+  }
+  .loved-image-container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    // display: flex;
+    // justify-content: center;
+    // flex-flow: column;
+    // text-align: center;
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+    }
+  }
+
+  .btn-review {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    padding: 12px 28px;
+    font-weight: 600;
+    line-height: 1.21429;
+    border: 1px solid var(--orange);
+    margin-top: 32px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 30ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: #ffffff;
+      background-color: var(--orange);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      border-color: transparent;
+      color: var(--white-color);
+      background-color: var(--orange);
+    }
+  }
+
+  .swiper-pagination {
+    position: static;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .choco-isloved-section .choco-container {
+    width: 768px;
+    padding: 100px 32px;
+
+    .swiper-wrapper {
+      width: calc(100% - 64px);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .choco-isloved-section .choco-container {
+    width: 1200px;
+    padding: 128px 32px;
+  }
+}
