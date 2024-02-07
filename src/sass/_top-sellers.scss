@@ -53,9 +53,12 @@ ul {
 
 /* Mobile View */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) {
   .ts-container {
     width: 375px;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
   }
 
   .top-sellers-title {
@@ -70,25 +73,26 @@ ul {
     display: block;
     justify-content: center;
   }
-
-  .top-sellers-text-desktop {
+  .top-sellers-list-item:nth-child(3) {
+    display: none;
+  }
+  .top-sellers-text-desktop p {
     display: none;
   }
 
-  .image1,
-  .image2 {
+  img {
     width: 335px;
     height: 464px;
   }
-
-  .image3 {
-    display: none;
-  }
+  // .image3 {
+  //   display: none;
+  // }
 
   .top-sellers-text-mobile {
     display: flex;
     margin-top: 20px;
     margin-bottom: 32px;
+    width: 306px;
   }
 
   .buy-now-button {
@@ -100,11 +104,13 @@ ul {
 
 /* Tablet View */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .ts-container {
     width: 768px;
   }
-
+  .top-sellers-container {
+    width: 704px;
+  }
   .top-sellers-title {
     margin-bottom: 50px;
   }
@@ -115,18 +121,23 @@ ul {
     gap: 16;
   }
 
-  .top-sellers-text-desktop {
+  .top-sellers-text-mobile {
     display: none;
   }
 
-  .image1,
-  .image2 {
+  .top-sellers-text-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+
+    p {
+      width: 306px;
+      display: block;
+    }
+  }
+  img {
     width: 344px;
     height: 464px;
-  }
-
-  .image3 {
-    display: none;
   }
 
   .top-sellers-text-mobile-container {
@@ -137,13 +148,16 @@ ul {
 
   .buy-now-button {
     display: flex;
-    margin-top: 32px;
+    margin: 0px;
   }
 }
 
 /* Desktop View */
 
 @media screen and (min-width: 1200px) {
+  .top-sellers-container {
+    width: 1136px;
+  }
   .ts-container {
     min-width: 1200px;
   }
@@ -160,8 +174,16 @@ ul {
 
   .top-sellers-list-item {
     display: flex;
-    width: 368px;
-    height: 464px;
+    // width: 368px;
+    // height: 464px;
+
+    img {
+      display: flex;
+      width: 368px;
+    }
+    &:nth-child(3) {
+      display: block;
+    }
   }
 
   .top-sellers-text-mobile {
@@ -170,12 +192,17 @@ ul {
 
   .top-sellers-text-desktop {
     display: flex;
-    margin-top: 32px;
     gap: 567px;
+    justify-content: space-between;
+
+    p {
+      width: 407px;
+      display: block;
+    }
   }
 
   .buy-now-button {
     display: flex;
-    margin: auto;
+    margin: 0;
   }
 }

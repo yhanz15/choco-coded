@@ -1,4 +1,19 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 :root {
   --black: #111;
@@ -17,7 +32,7 @@
 
 body {
   height: 100vh;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 }
 
@@ -29,7 +44,6 @@ img {
 .content {
   display: flex;
   flex-flow: column;
-  // gap: 72px 0;
   background-color: var(--dirty-white);
 }
 .list {
