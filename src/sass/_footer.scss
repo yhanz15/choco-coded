@@ -1,5 +1,3 @@
-/*  Footer  */
-
 .footer {
   background-color: var(--grey);
   padding: 32px 20px;
@@ -179,7 +177,7 @@
   }
   .footer-contacts {
     position: absolute;
-    padding-left: 424px; 
+    padding-left: 424px;
     margin-bottom: 50px;
   }
 
@@ -196,6 +194,10 @@
 
   .footer-address {
     margin-right: 50px;
+  }
+
+  .footer-icon-list {
+    padding-left: 20px;
   }
 
   .footer-icon-item {
@@ -216,7 +218,7 @@
   .footer-container {
     width: 1200px;
     padding: 50px 32px;
-     margin-left: -424px;
+    margin-left: -424px;
   }
 
   .footer-contacts-container {
@@ -243,7 +245,7 @@
 
   .footer-contacts {
     position: absolute;
-    padding-left: 870px; 
+    padding-left: 820px;
     margin-bottom: 0;
   }
 
@@ -251,12 +253,11 @@
     width: 1132px;
     margin-bottom: 62px;
   }
-}
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 335px;
+  .footer-icon-list {
+    padding-left: 20px;
   }
+
 }
 
 @media screen and (min-width: 375px) {
